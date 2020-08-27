@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800&display=swap");
+
+@import "About.css";
+@import "Contact.css";
+@import "Footer.css";
+@import "Utilities.css";
+@import "Jumbotron.css";
+@import "Projects.css";
+@import "Navbar.css";
+
+:root {
+  --primary-color: #efcff8;
+  --secondary-color: #da80f2;
+  --tertiary-color: #e7c7f0;
+  --quanternary-color: #653b70;
+  --quinary-color: #b69dbd;
+  --primary-grey: rgb(231, 231, 231);
+  --secondary-grey: rgb(237, 237, 237);
+  --alpha: 0.8;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  background-size: cover;
+  background-position: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.822), rgba(0, 0, 0, 0.521)),
+    url("../img/Background.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+}
+
+@media (max-width: 500px) {
+  body {
+    background-attachment: scroll;
+    background-size: cover;
+    -o-background-size: auto;
+    -moz-background-size: auto;
+    -webkit-background-size: auto;
+  }
+}

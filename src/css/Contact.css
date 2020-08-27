@@ -1,0 +1,54 @@
+.contact-background {
+  background: rgba(255, 249, 255, 0.93);
+  padding: 5rem 10rem;
+}
+
+.contact-bottom-line {
+  height: 2px;
+  width: 8rem;
+  background: var(--primary-color);
+  display: block;
+  margin: 1rem auto;
+  margin-bottom: 2.5rem;
+}
+
+.contact-outer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.contact-inner-grid p {
+  padding-right: 9rem;
+}
+
+.contact-picture {
+  height: 250px;
+  border-radius: 50%;
+}
+
+.social-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.social-grid-item {
+  margin-bottom: 1.2rem;
+  text-align: left;
+  padding-left: 24%;
+}
+
+.social-link {
+  font-size: 1.5rem;
+  color: inherit;
+}
+
+.social-link i {
+  font-size: 3rem;
+  color: inherit;
+  margin-right: 5%;
+}
+
+.social-link:hover {
+  text-decoration: none;
+  color: rgb(236, 176, 253);
+}

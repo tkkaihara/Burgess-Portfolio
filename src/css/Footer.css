@@ -1,0 +1,12 @@
+footer {
+  color: var(--secondary-color);
+  background: #e7c7f0ef;
+  width: 100%;
+  position: sticky;
+  top: 100%;
+  border-top: 1px solid var(--secondary-color);
+}
+
+footer p {
+  margin-bottom: 0;
+}

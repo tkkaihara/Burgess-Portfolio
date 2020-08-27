@@ -1,0 +1,27 @@
+.about-background {
+  background: rgba(255, 249, 255, 0.93);
+  padding: 5rem 10rem;
+}
+
+.about-bottom-line {
+  height: 2px;
+  width: 8rem;
+  background: var(--primary-color);
+  display: block;
+  margin: 1rem auto;
+  margin-bottom: 2.5rem;
+}
+
+.about-outer-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.about-inner-grid p {
+  padding-right: 9rem;
+}
+
+.about-picture {
+  height: 250px;
+  border-radius: 50%;
+}

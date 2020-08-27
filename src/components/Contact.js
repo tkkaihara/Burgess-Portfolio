@@ -33,7 +33,8 @@ export default function About() {
                   </div>
                   <div className="social-grid-item social-link">
                     <a href={Resume} target="_blank" className="social-link">
-                      <i class="fas fa-file-alt"></i> <span>Resume</span>
+                      <i class="fas fa-file-alt"></i>{" "}
+                      <span>Re&#769;sume&#769;</span>
                     </a>
                   </div>
                 </div>

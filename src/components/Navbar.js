@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import { Link } from "react-scroll";
-import { Collapse, Navbar, NavbarToggler, Nav, NavItem } from "reactstrap";
+import React, {useState} from 'react';
+import {Link} from 'react-scroll';
+import {Collapse, Navbar, NavbarToggler, Nav, NavItem} from 'reactstrap';
 
 export default function AppNavbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,7 +15,7 @@ export default function AppNavbar() {
 
   return (
     <>
-      <Navbar scrolling="true" dark expand="xl" className="main-nav">
+      <Navbar scrolling='true' dark expand='xl' className='main-nav'>
         {/* <Link
           to="landing"
           smooth={true}
@@ -25,45 +25,50 @@ export default function AppNavbar() {
           <img className="navbar-logo" src="logo/logo_white.png" alt="logo" />
         </Link> */}
         <NavbarToggler onClick={toggle} />
-        <Collapse isOpen={isOpen} navbar className="white-font">
-          <Nav className="navbar" navbar>
+        <Collapse isOpen={isOpen} navbar className='white-font'>
+          <Nav className='navbar' navbar>
             <NavItem>
               <Link
-                to="landing"
+                to='landing'
                 onClick={mobileToggle}
                 smooth={true}
-                duration={800}
-              >
+                duration={800}>
                 Home
               </Link>
             </NavItem>
             <NavItem>
               <Link
-                to="about"
+                to='about'
                 onClick={mobileToggle}
                 smooth={true}
-                duration={800}
-              >
+                duration={800}>
                 About Me
               </Link>
             </NavItem>
             <NavItem>
               <Link
-                to="projects"
+                to='my-process'
                 onClick={mobileToggle}
                 smooth={true}
-                duration={800}
-              >
+                duration={800}>
+                My Process
+              </Link>
+            </NavItem>
+            <NavItem>
+              <Link
+                to='projects'
+                onClick={mobileToggle}
+                smooth={true}
+                duration={800}>
                 Projects
               </Link>
             </NavItem>
             <NavItem>
               <Link
-                to="contact"
+                to='contact'
                 onClick={mobileToggle}
                 smooth={true}
-                duration={800}
-              >
+                duration={800}>
                 Contact
               </Link>
             </NavItem>

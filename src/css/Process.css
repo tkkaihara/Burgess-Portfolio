@@ -1,9 +1,9 @@
-.about-background {
-  background: rgba(255, 249, 255, 0.96);
+.process-background {
+  background: rgba(252, 241, 252, 0.96);
   padding: 5rem 10rem;
 }
 
-.about-bottom-line {
+.process-bottom-line {
   height: 2px;
   width: 8rem;
   background: var(--primary-color);
@@ -12,20 +12,30 @@
   margin-bottom: 2.5rem;
 }
 
-.about-outer-grid {
+.process-outer-grid {
   display: grid;
   grid-template-columns: 1fr 2fr;
 }
 
-.about-inner-grid p {
+.process-inner-grid p {
   padding-right: 9rem;
 }
 
-.about-picture {
+.process-picture {
   height: 250px;
   border-radius: 50%;
 }
 
 .video {
   margin-top: 4%;
+}
+
+.process-picture-vertical {
+  width: 35%;
+  margin: 1% 0 3% 0;
+}
+
+.process-picture-landscape {
+  width: 75%;
+  margin: 2% 0 4% 0;
 }

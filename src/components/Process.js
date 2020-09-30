@@ -1,8 +1,8 @@
 import React from 'react';
 import Handnotes from '../img/Handnotes.png';
-import Moodboard from '../img/Moodboard.png';
+import Moodboard from '../img/Moodboard.jpg';
 import Wireframe from '../img/Wireframe.png';
-import Styleguide from '../img/Styleguide.png';
+import Styleguide from '../img/Styleguide.jpg';
 
 export default function Process() {
   return (

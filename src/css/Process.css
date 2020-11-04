@@ -62,7 +62,7 @@
 .app-design-menu {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin: 0 25% 25px 25%;
+  margin: 0 22% 25px 22%;
 }
 .app-design-menu-item {
   text-align: center;

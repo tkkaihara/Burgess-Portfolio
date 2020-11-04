@@ -1,3 +1,14 @@
+.background-a {
+  background: rgba(255, 249, 255, 0.96);
+  padding: 5rem 10rem;
+}
+.background-b {
+  background: rgba(252, 241, 252, 0.96);
+  padding: 5rem 10rem;
+}
+.block {
+  display: block;
+}
 .bold {
   color: var(--quanternary-color);
   font-weight: 700;
@@ -52,6 +63,10 @@
   border-top-right-radius: 0.5rem;
 }
 
+.center {
+  text-align: center;
+}
+
 .center-contents {
   width: 60%;
   margin: 0 auto;
@@ -86,7 +101,57 @@
 .font-size-1_6 {
   font-size: 1.6rem;
 }
-
+.mb-5 {
+  margin-bottom: 5rem !important;
+}
+.pt-6 {
+  padding-top: 1.6rem;
+}
+.pt-7 {
+  padding-top: 1.7rem;
+}
+.pt-8 {
+  padding-top: 1.8rem;
+}
+.pt-9 {
+  padding-top: 1.9rem;
+}
+.pt-10 {
+  padding-top: 2rem;
+}
+.pt-11 {
+  padding-top: 2.1rem;
+}
+.pt-12 {
+  padding-top: 2.2rem;
+}
+.pt-13 {
+  padding-top: 2.3rem;
+}
+.pt-14 {
+  padding-top: 2.4rem;
+}
+.pt-15 {
+  padding-top: 2.5rem;
+}
+.pt-16 {
+  padding-top: 2.6rem;
+}
+.pt-17 {
+  padding-top: 2.7rem;
+}
+.pt-18 {
+  padding-top: 2.8rem;
+}
+.pt-19 {
+  padding-top: 2.9rem;
+}
+.pt-20 {
+  padding-top: 3rem;
+}
+.pt-30 {
+  padding-top: 4rem;
+}
 .section-title {
   color: var(--quanternary-color);
   font-size: 3.5rem;

@@ -11,11 +11,7 @@ export default function About() {
             <div className='about-bottom-line'></div>
             <div className='about-outer-grid'>
               <div className='about-inner-grid'>
-                <img
-                  src={Picture}
-                  alt='Avatar Picture'
-                  className='about-picture'
-                />
+                <img src={Picture} alt='Avatar' className='about-picture' />
               </div>
               <div className='about-inner-grid'>
                 <p className='lead'>
@@ -36,14 +32,6 @@ export default function About() {
                 </p>
               </div>
             </div>
-            <iframe
-              width='560'
-              height='315'
-              src='https://www.youtube.com/embed/tRTbsJ5dA8c'
-              frameborder='0'
-              allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-              allowfullscreen
-              className='video'></iframe>
           </section>
         </div>
       </section>

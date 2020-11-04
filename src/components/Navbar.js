@@ -1,9 +1,21 @@
 import React, {useState} from 'react';
-import {Link} from 'react-scroll';
-import {Collapse, Navbar, NavbarToggler, Nav, NavItem} from 'reactstrap';
+import {Link as ScrollLink} from 'react-scroll';
+import {Switch, Link} from 'react-router-dom';
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  Nav,
+  NavItem,
+  Dropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+} from 'reactstrap';
 
 export default function AppNavbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
 
@@ -13,64 +25,66 @@ export default function AppNavbar() {
     }
   }
 
+  const toggleDropdown = () => setDropdownOpen((prevState) => !prevState);
+
   return (
     <>
       <Navbar scrolling='true' dark expand='xl' className='main-nav'>
-        {/* <Link
-          to="landing"
-          smooth={true}
-          duration={800}
-          className="white-font navbar-brand"
-        >
-          <img className="navbar-logo" src="logo/logo_white.png" alt="logo" />
-        </Link> */}
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar className='white-font'>
           <Nav className='navbar' navbar>
             <NavItem>
-              <Link
+              <ScrollLink
                 to='landing'
                 onClick={mobileToggle}
                 smooth={true}
                 duration={800}>
-                Home
-              </Link>
+                <Switch>
+                  <Link to='/'>Home</Link>
+                </Switch>
+              </ScrollLink>
             </NavItem>
+
             <NavItem>
-              <Link
+              <ScrollLink
                 to='about'
                 onClick={mobileToggle}
                 smooth={true}
                 duration={800}>
-                About Me
-              </Link>
+                <Switch>
+                  <Link to='/'>About Me</Link>
+                </Switch>
+              </ScrollLink>
             </NavItem>
+
             <NavItem>
-              <Link
-                to='my-process'
-                onClick={mobileToggle}
-                smooth={true}
-                duration={800}>
-                My Process
-              </Link>
+              <Dropdown isOpen={dropdownOpen} toggle={toggleDropdown}>
+                <DropdownToggle caret>My Work</DropdownToggle>
+                <DropdownMenu>
+                  <DropdownItem>
+                    <Switch>
+                      <Link to='/app_designs'>App Designs</Link>
+                    </Switch>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <Switch>
+                      <Link to='/logos'>Logos</Link>
+                    </Switch>
+                  </DropdownItem>
+                </DropdownMenu>
+              </Dropdown>
             </NavItem>
+
             <NavItem>
-              <Link
-                to='projects'
-                onClick={mobileToggle}
-                smooth={true}
-                duration={800}>
-                Projects
-              </Link>
-            </NavItem>
-            <NavItem>
-              <Link
+              <ScrollLink
                 to='contact'
                 onClick={mobileToggle}
                 smooth={true}
                 duration={800}>
-                Contact
-              </Link>
+                <Switch>
+                  <Link to='/'>Contact</Link>
+                </Switch>
+              </ScrollLink>
             </NavItem>
           </Nav>
         </Collapse>

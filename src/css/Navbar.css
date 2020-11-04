@@ -29,77 +29,78 @@
   transition: border-color 0.3s;
   cursor: pointer;
 }
+.main-nav div ul li a a {
+  border: none;
+}
+.main-nav div ul li button {
+  text-decoration: none;
+  font-weight: 300;
+  color: #fff;
+  background-color: #00000000;
+  text-transform: uppercase;
+  border-bottom: 1px transparent solid;
+  width: 100%;
+  display: block;
+  padding-bottom: 0.4rem;
+  transition: border-color 0.3s;
+  cursor: pointer;
+}
+.main-nav div ul li button.dropdown-item a {
+  color: #000;
+}
+.main-nav div ul li button.dropdown-item:active {
+  background: #fff;
+}
+.main-nav div ul li button.dropdown-toggle.btn.btn-secondary {
+  background: none;
+  border-color: rgba(0, 0, 0, 0);
+}
+.main-nav div ul li button:active {
+  background-color: #000000;
+  color: #000;
+}
 .main-nav div ul li a:hover {
   color: #fff;
 }
 .main-nav a:hover {
   border-color: var(--primary-color);
 }
+.main-nav div ul li button:hover,
+.main-nav div ul li button:active,
+.main-nav div ul li button:focus {
+  border-color: var(--primary-color) !important;
+  box-shadow: none !important;
+}
+.dropdown-item,
+.dropdown-item:hover,
+.dropdown-item:focus,
+.dropdown-item:active {
+  border: none !important;
+}
 .main-nav .text-nav-right {
   color: var(--primary-color);
 }
-
 .navbar {
   padding: 0.2rem 5rem;
 }
-
 .navbar-brand {
   padding: 0 1rem 0 1rem;
   margin-left: 5%;
 }
-
 .navbar-logo {
   height: 40px;
   width: auto;
 }
-
 .main-nav div ul li {
   padding: 0.5rem 1.5rem;
 }
-
 .main-nav div ul li a {
   padding: 0.3rem;
 }
-
 .navbar-toggler {
   margin-right: 1rem;
 }
-
-/* Auth */
 .navbar-right-push {
-  content: "";
+  content: '';
   margin-right: 5%;
-}
-.main-nav a.auth-link:hover {
-  border-color: white;
-  color: var(--primary-color);
-}
-
-.user-icon {
-  margin-right: 0.5rem;
-  font-size: 1.05rem;
-}
-
-.navbar-confirm {
-  margin: auto;
-  border: 1px solid var(--primary-color);
-  padding: 0.2rem 2rem;
-  color: rgb(112, 112, 112);
-  font-weight: 300;
-  font-size: 1.1rem;
-}
-
-.navbar-confirm:hover {
-  color: rgb(245, 245, 245);
-  text-decoration: none;
-  background: linear-gradient(
-    90deg,
-    var(--primary-color),
-    var(--quinary-color)
-  );
-}
-
-.navbar-confirm-button-container {
-  margin-top: 9%;
-  text-align: center;
 }

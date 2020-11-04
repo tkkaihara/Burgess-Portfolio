@@ -17,33 +17,34 @@ export default function About() {
                     <a
                       href='https://www.linkedin.com/in/victoria-burgess'
                       target='_blank'
+                      rel='noopener noreferrer'
                       className='social-link'>
-                      <i class='fab fa-linkedin'></i>
+                      <i className='fab fa-linkedin'></i>
                       <span>www.linkedin.com/in/victoria-burgess</span>
                     </a>
                   </div>
                   <div className='social-grid-item social-link'>
-                    <i class='fas fa-envelope-square'></i>
+                    <i className='fas fa-envelope-square'></i>
                     <span>victoriajaneburgess@gmail.com</span>
                   </div>
                   <div className='social-grid-item social-link'>
-                    <i class='fas fa-phone-square-alt'></i>{' '}
+                    <i className='fas fa-phone-square-alt'></i>{' '}
                     <span>206-251-8047</span>
                   </div>
                   <div className='social-grid-item social-link'>
-                    <a href={Resume} target='_blank' className='social-link'>
-                      <i class='fas fa-file-alt'></i>{' '}
+                    <a
+                      href={Resume}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      className='social-link'>
+                      <i className='fas fa-file-alt'></i>{' '}
                       <span>Re&#769;sume&#769;</span>
                     </a>
                   </div>
                 </div>
               </div>
               <div className='contact-inner-grid'>
-                <img
-                  src={Picture}
-                  alt='Avatar Picture'
-                  className='contact-picture'
-                />
+                <img src={Picture} alt='Avatar' className='contact-picture' />
               </div>
             </div>
           </section>

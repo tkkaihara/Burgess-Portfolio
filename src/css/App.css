@@ -12,7 +12,7 @@
 
 :root {
   --primary-color: #efcff8;
-  --secondary-color: #da80f2;
+  --secondary-color: rgb(218, 128, 242);
   --tertiary-color: #e7c7f0;
   --quanternary-color: #653b70;
   --quinary-color: #b69dbd;

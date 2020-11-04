@@ -1,5 +1,9 @@
-.process-background {
-  background: rgba(252, 241, 252, 0.96);
+.process-background-a {
+  background: rgba(252, 237, 252, 0.96);
+  padding: 5rem 10rem;
+}
+.process-background-b {
+  background: rgba(255, 249, 255, 0.96);
   padding: 5rem 10rem;
 }
 
@@ -10,6 +14,15 @@
   display: block;
   margin: 1rem auto;
   margin-bottom: 2.5rem;
+}
+
+.process-header-bottom-line {
+  height: 2px;
+  width: 15rem;
+  background: #000;
+  display: block;
+  margin: 1rem auto;
+  margin-bottom: 2rem;
 }
 
 .process-outer-grid {
@@ -38,4 +51,56 @@
 .process-picture-landscape {
   width: 75%;
   margin: 2% 0 4% 0;
+  object-fit: cover;
+}
+
+.app-page-header {
+  font-size: 5rem;
+  font-weight: 100;
+}
+
+.app-design-menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 25% 25px 25%;
+}
+.app-design-menu-item {
+  text-align: center;
+}
+.app-design-menu-item a:hover {
+  color: var(--secondary-color);
+  border-bottom: 1px rgb(218, 128, 242) solid;
+}
+
+.logos-page-header {
+  font-size: 5rem;
+  font-weight: 100;
+}
+
+.logos-menu {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 30% 25px 30%;
+}
+.logos-menu-item {
+  text-align: center;
+}
+.logos-menu-item a:hover {
+  color: var(--secondary-color);
+  border-bottom: 1px rgb(218, 128, 242) solid;
+}
+
+.app-link {
+  border: 1px solid var(--secondary-color);
+  padding: 0.5rem 1.7rem;
+  background: rgba(0, 0, 0, 0);
+  color: var(--secondary-color) !important;
+  font-weight: 300;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.app-link:hover {
+  color: var(--quanternary-color) !important;
+  text-decoration: none;
+  background: var(--primary-color);
 }

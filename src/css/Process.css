@@ -104,3 +104,17 @@
   text-decoration: none;
   background: var(--primary-color);
 }
+
+.circle {
+  border-radius: 50%;
+}
+
+.logo-pictures {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+}
+.logo-picture {
+  width: 65%;
+  margin: 1% 0 3% 0;
+}
